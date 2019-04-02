@@ -47,9 +47,20 @@ var refreshExamples = function () {
 
       var $button = $("<button>")
         .addClass("btn btn-danger float-right delete")
-        .text("ｘ");
+        .text("x");
+        $li.append($button);
 
-      $li.append($button);
+      var $button = $("<button>")
+        .addClass("btn btn-success float-right count")
+        .text("0");
+        $li.append($button);
+
+      var $button = $("<button>")
+        .addClass("btn btn-info float-right like")
+        .text("like");
+        $li.append($button);
+
+      
 
       return $li;
     });
@@ -94,7 +105,24 @@ var handleDeleteBtnClick = function () {
   });
 };
 
+var clicks = 0;
+var handleLikeBtnClick = function () {
+  var idToLike = $(this)
+    .parent()
+    .attr("data-id");
+
+
+      clicks += 1;
+      // document.getElementsByClassName("like").innerHTML = clicks;  
+      $(".like").html=clicks;
+  
+  refreshExamples();
+};
+
 
 // Add event listeners to the submit and delete buttons
 $submitBtn.on("click", handleFormSubmit);
-$exampleList.on("click", ".like", handleDeleteBtnClick);
+$exampleList.on("click", ".like", handleLikeBtnClick);
+$exampleList.on("click", ".delete", handleDeleteBtnClick);
+
+
