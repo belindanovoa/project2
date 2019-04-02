@@ -23,11 +23,12 @@ var API = {
     });
   },
   likeExample: function(){
-      return $.ajax({
-        url: "api/examples",
-        type: 'POST',
-        //data: {increment: true}
-      });
+      // return $.ajax({
+      //   url: "api/examples",
+      //   type: 'POST',
+      //   data: {increment: true}
+      // });
+     // return clicks++;
   },
   deleteExample: function (id) {
     return $.ajax({
@@ -112,14 +113,14 @@ var handleDeleteBtnClick = function () {
 
 var handleLikeBtnClick = function () {
   var clicks = 0;
-  var idToLike = $(this)
-    .parent()
-    .attr("data-id");
+  // var idToLike = $(this)
+  //   .parent()
+  //   .attr("data-id");
   
-    API.likeExample(idToLike);
-    //$(".counter").text(clicks);
-      console.log(clicks++);
-      refreshExamples();
+   //API.likeExample(idToLike);
+    //$(".counter").text("c");
+      //console.log(clicks++);
+      //refreshExamples();
 };
 
 
