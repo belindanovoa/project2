@@ -22,7 +22,10 @@
           {{#each users}}
           <li data-id="{{this.id}}" class="list-group-item">
             <a href="example/{{this.id}}">{{this.text}}</a>
-            <button class="btn btn-danger float-right delete">ｘ</button>
+            {{!-- <button class="btn btn-danger float-right delete">ｘ</button> --}}
+            <button class="btn btn-danger float-right like" onClick="click()">like</button>
+            {{!-- <button type="button" onClick="click()">Click me</button>--}}
+            <p>Clicks: <a id="clicks">0</a></p>
           </li>
           {{/each}}
         </ul>
