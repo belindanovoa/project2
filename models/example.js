@@ -1,8 +1,8 @@
 module.exports = function (sequelize, DataTypes) {
-  var Example = sequelize.define("Example", {
+  var Example2 = sequelize.define("Example2", {
     text: DataTypes.STRING,
-    description: DataTypes.TEXT
-    like: DataTypes.INT
+    description: DataTypes.TEXT,
+    like: DataTypes.INTEGER
   });
-  return Example;
+  return Example2;
 };

@@ -22,12 +22,12 @@ var API = {
       type: "GET"
     });
   },
-  likeExample: function () {
-    return $.ajax({
-      url: "api/examples",
-      type: "PUT"
-      //data:
-    });
+  likeExample: function(id){
+      return $.ajax({
+        url: "api/examples/" + id,
+        type: 'PUT'
+        //data: {increment: true}
+      });
   },
   deleteExample: function (id) {
     return $.ajax({
@@ -55,18 +55,18 @@ var refreshExamples = function () {
       var $button = $("<button>")
         .addClass("btn btn-danger float-right delete")
         .text("x");
-      $li.append($button);
+        $li.append($button);
 
       var $button = $("<button>")
         .addClass("btn btn-success float-right counter")
         .text("0");
-      $li.append($button);
+        $li.append($button);
 
       var $button = $("<button>")
         .addClass("btn btn-info float-right like")
         .text("like");
-      $li.append($button);
-
+        $li.append($button);
+        
       return $li;
     });
 
@@ -111,13 +111,14 @@ var handleDeleteBtnClick = function () {
 };
 
 var handleLikeBtnClick = function () {
+  var clicks = 0;
   var idToLike = $(this)
     .parent()
     .attr("data-id");
-
+  
   API.likeExample(idToLike);
-  //$(".counter").text("");
-  refreshExamples();
+    //$(".counter").html();
+      refreshExamples();
 };
 
 

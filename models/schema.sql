@@ -1,8 +1,8 @@
 
 -- CREATE DATABASE test_db;
 
-CREATE DATABASE test2_db;
-USE test2_db;
+-- CREATE DATABASE test2_db;
+-- USE test2_db;
 DROP DATABASE IF EXISTS test2_db;
 CREATE DATABASE test2_db;
 USE test2_db;
