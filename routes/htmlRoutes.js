@@ -3,9 +3,13 @@ var path = require("path");
 module.exports = function (app) {
   //Load index page
   app.get("/", function (req, res) {
-    {
-      res.render("index");
-    };
+    db.Example.findAll({}).then(function (results) {
+      var hbObj = {
+        Examples: results
+      }
+      res.render("index", hbObj);
+      //console.log("hboj", hbObj)
+    });
   });
 
 

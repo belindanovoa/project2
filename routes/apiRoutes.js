@@ -15,6 +15,13 @@ module.exports = function (app) {
     });
   });
 
+  app.put("/api/examples", function (req, res) {
+    // db.Example.update({ where: { id: req.params.id } }).then(function (dbExample) {
+    //   res.json(dbExample);
+    console.log("hi");
+  });
+
+
   // Delete an example by id
   app.delete("/api/examples/:id", function (req, res) {
     db.Example.destroy({ where: { id: req.params.id } }).then(function (dbExample) {

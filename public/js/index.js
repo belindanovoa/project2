@@ -22,13 +22,12 @@ var API = {
       type: "GET"
     });
   },
-  likeExample: function(){
-      // return $.ajax({
-      //   url: "api/examples",
-      //   type: 'POST',
-      //   data: {increment: true}
-      // });
-     // return clicks++;
+  likeExample: function () {
+    return $.ajax({
+      url: "api/examples",
+      type: "PUT"
+      //data:
+    });
   },
   deleteExample: function (id) {
     return $.ajax({
@@ -56,18 +55,18 @@ var refreshExamples = function () {
       var $button = $("<button>")
         .addClass("btn btn-danger float-right delete")
         .text("x");
-        $li.append($button);
+      $li.append($button);
 
       var $button = $("<button>")
         .addClass("btn btn-success float-right counter")
         .text("0");
-        $li.append($button);
+      $li.append($button);
 
       var $button = $("<button>")
         .addClass("btn btn-info float-right like")
         .text("like");
-        $li.append($button);
-        
+      $li.append($button);
+
       return $li;
     });
 
@@ -112,15 +111,13 @@ var handleDeleteBtnClick = function () {
 };
 
 var handleLikeBtnClick = function () {
-  var clicks = 0;
-  // var idToLike = $(this)
-  //   .parent()
-  //   .attr("data-id");
-  
-   //API.likeExample(idToLike);
-    //$(".counter").text("c");
-      //console.log(clicks++);
-      //refreshExamples();
+  var idToLike = $(this)
+    .parent()
+    .attr("data-id");
+
+  API.likeExample(idToLike);
+  //$(".counter").text("");
+  refreshExamples();
 };
 
 
