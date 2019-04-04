@@ -1,5 +1,5 @@
 var db = require("../models");
-var Sequelize = require("sequelize");
+//var Sequelize = require("sequelize");
 
 module.exports = function (app) {
   // Get all examples
@@ -16,15 +16,20 @@ module.exports = function (app) {
     });
   });
 
-//   WORKS FOR SINGLE INCREMENT
-  app.put("/api/examples/:id", function (req, res) {
-  db.Example3.increment( { like: + 1 }, { where: { id: req.params.id } }).then(function (dbExample) { 
-    res.json(dbExample);
+//   WORKS FOR EXISTING ENTRIES 
+//   app.put("/api/examples/:id", function (req, res) {
+//   db.Example3.increment( { like: + 1 }, { where: { id: req.params.id } }).then(function (dbExample) { 
+//     res.json(dbExample);
+//   });
+// });
 
+  app.put("/api/examples/:id", function (req, res) {
+  db.Example3.update( { like: "+like + 1" }, { where: { id: req.params.id } }).then(function (dbExample) { 
+    res.json(dbExample);
   });
 });
 
-// Works for few examples
+//   Works for few examples
 //   app.put("/api/examples/:id", function (req, res) {
 //   db.Example3.increment({ like: +1 }, { where: { id: req.params.id } }).then(function (dbExample) {
 //       res.json(dbExample);
