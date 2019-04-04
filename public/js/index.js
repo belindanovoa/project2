@@ -26,7 +26,6 @@ var API = {
       return $.ajax({
         url: "api/examples/" + id,
         type: 'PUT'
-        //data: {increment: true}
       });
   },
   deleteExample: function (id) {
