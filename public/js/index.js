@@ -25,7 +25,7 @@ var API = {
   likeExample: function(id){
       return $.ajax({
         url: "api/examples/" + id,
-        type: 'PUT'
+        type: "PUT"
       });
   },
   deleteExample: function (id) {
@@ -47,7 +47,8 @@ var refreshExamples = function () {
       var $li = $("<li>")
         .attr({
           class: "list-group-item",
-          "data-id": example.id
+          "data-id": example.id,
+          "data-like": example.like
         })
         .append($a);
 
@@ -58,7 +59,7 @@ var refreshExamples = function () {
 
       var $button = $("<button>")
         .addClass("btn btn-success float-right counter")
-        .text("0");
+        .text(example.like);
         $li.append($button);
 
       var $button = $("<button>")
@@ -110,14 +111,18 @@ var handleDeleteBtnClick = function () {
 };
 
 var handleLikeBtnClick = function () {
-  var clicks = 0;
   var idToLike = $(this)
     .parent()
     .attr("data-id");
+
+    var idToLike2 = $(this)
+    .parent()
+    .attr("data-like");
   
-  API.likeExample(idToLike);
-    //$(".counter").html();
-      refreshExamples();
+    API.likeExample(idToLike);
+    console.log(idToLike2);
+    //$(".counter").val(idToLike2);
+    refreshExamples();
 };
 
 

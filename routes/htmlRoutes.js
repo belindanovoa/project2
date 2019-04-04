@@ -3,7 +3,7 @@ var path = require("path");
 module.exports = function (app) {
   //Load index page
   app.get("/", function (req, res) {
-    db.Example3.findAll({}).then(function (results) {
+    db.Example3.all({}).then(function (results) {
       var hbObj = {
         Examples: results
       }
