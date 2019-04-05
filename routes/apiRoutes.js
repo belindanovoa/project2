@@ -16,25 +16,26 @@ module.exports = function (app) {
     });
   });
 
-//   WORKS FOR EXISTING ENTRIES 
-//   app.put("/api/examples/:id", function (req, res) {
-//   db.Example3.increment( { like: + 1 }, { where: { id: req.params.id } }).then(function (dbExample) { 
-//     res.json(dbExample);
-//   });
-// });
+  //   WORKS FOR EXISTING ENTRIES 
+  //   app.put("/api/examples/:id", function (req, res) {
+  //   db.Example3.increment( { like: + 1 }, { where: { id: req.params.id } }).then(function (dbExample) { 
+  //     res.json(dbExample);
+  //   });
+  // });
 
   app.put("/api/examples/:id", function (req, res) {
-  db.Example3.update( { like: "+like + 1" }, { where: { id: req.params.id } }).then(function (dbExample) { 
-    res.json(dbExample);
+    db.Example3.update({ like: "+like + 1" }, { where: { id: req.params.id } }).then(function (dbExample) {
+      res.json(dbExample);
+      console.log(res)
+    });
   });
-});
 
-//   Works for few examples
-//   app.put("/api/examples/:id", function (req, res) {
-//   db.Example3.increment({ like: +1 }, { where: { id: req.params.id } }).then(function (dbExample) {
-//       res.json(dbExample);
-//   });
-// });
+  //   Works for few examples
+  //   app.put("/api/examples/:id", function (req, res) {
+  //   db.Example3.increment({ like: +1 }, { where: { id: req.params.id } }).then(function (dbExample) {
+  //       res.json(dbExample);
+  //   });
+  // });
 
   // Delete an example by id
   app.delete("/api/examples/:id", function (req, res) {
