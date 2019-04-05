@@ -1,5 +1,4 @@
 var db = require("../models");
-//var Sequelize = require("sequelize");
 
 module.exports = function (app) {
   // Get all examples
@@ -16,26 +15,15 @@ module.exports = function (app) {
     });
   });
 
-  //   WORKS FOR EXISTING ENTRIES 
-  //   app.put("/api/examples/:id", function (req, res) {
-  //   db.Example3.increment( { like: + 1 }, { where: { id: req.params.id } }).then(function (dbExample) { 
-  //     res.json(dbExample);
-  //   });
-  // });
-
   app.put("/api/examples/:id", function (req, res) {
-    db.Example3.update({ like: "+like + 1" }, { where: { id: req.params.id } }).then(function (dbExample) {
+    db.Example3.increment({ like: + 1 }, { where: { id: req.params.id } }).then(function (dbExample) {
       res.json(dbExample);
-      console.log(res)
+      console.log(req.params.like);
+      var likesArray = [];
+      likesArray.push(req.params.like);
+      console.log(likesArray);
     });
   });
-
-  //   Works for few examples
-  //   app.put("/api/examples/:id", function (req, res) {
-  //   db.Example3.increment({ like: +1 }, { where: { id: req.params.id } }).then(function (dbExample) {
-  //       res.json(dbExample);
-  //   });
-  // });
 
   // Delete an example by id
   app.delete("/api/examples/:id", function (req, res) {
@@ -44,3 +32,24 @@ module.exports = function (app) {
     });
   });
 };
+
+  //   WORKS FOR EXISTING ENTRIES 
+  //   app.put("/api/examples/:id", function (req, res) {
+  //   db.Example3.increment( { like: + 1 }, { where: { id: req.params.id } }).then(function (dbExample) { 
+  //     res.json(dbExample);
+  //   });
+  // });
+
+  // app.put("/api/examples/:id", function (req, res) {
+  //   db.Example3.increment({ like: + 5 }, { where: { id: req.params.id } }).then(function (dbExample) {
+  //     res.json(dbExample);
+  //     console.log(req.params.id)
+  //   });
+  // });
+
+  // Works for few examples
+  // app.put("/api/examples/:id", function (req, res) {
+  //   db.Example3.increment({ like: +1 }, { where: { id: req.params.id } }).then(function (dbExample) {
+  //     res.json(dbExample);
+  //   });
+  // });
