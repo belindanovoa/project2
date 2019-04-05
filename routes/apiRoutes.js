@@ -18,10 +18,6 @@ module.exports = function (app) {
   app.put("/api/examples/:id", function (req, res) {
     db.Example3.increment({ like: + 1 }, { where: { id: req.params.id } }).then(function (dbExample) {
       res.json(dbExample);
-      console.log(req.params.like);
-      var likesArray = [];
-      likesArray.push(req.params.like);
-      console.log(likesArray);
     });
   });
 
