@@ -41,7 +41,7 @@ var refreshExamples = function () {
   API.getExamples().then(function (data) {
     var $examples = data.map(function (example) {
       var $a = $("<a>")
-        .text(example.text + " ----  "+ example.description)
+        .text(example.text + " ----  " + example.description)
         .attr("href", "/example/" + example.id);
 
       var $li = $("<li>")
@@ -118,23 +118,19 @@ var handleLikeBtnClick = function () {
     .attr("data-id");
   API.likeExample(idToLike);
 
-  var idToLike2 = $(this)
-  .parent()
-  .attr("data-like");
-
-  API.getExample(idToLike2);
-  //sortLikes(idToLike2);
-  var likesArray = [];
-  likesArray.push(idToLike2);
-  console.log(likesArray);
-  refreshExamples();
+  sortLikes();
 };
 
-// var sortLikes = function (idToLike2) {
-//     var likesArray = [];
-//     likesArray.push(idToLike2);
-//     console.log(likesArray);
-// }
+var sortLikes = function () {
+
+  var idToLike2 = $(this)
+    .parent()
+    .attr("data-like");
+
+  API.getExamples(idToLike2);
+
+  refreshExamples();
+}
 
 // Add event listeners to the submit and delete buttons
 $submitBtn.on("click", handleFormSubmit);
