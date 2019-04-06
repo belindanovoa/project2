@@ -54,20 +54,20 @@ var refreshExamples = function () {
         })
         .append($a);
 
-      var $button = $("<button>")
+      var $deleteButton = $("<delete-button>")
         .addClass("btn btn-danger float-right delete")
         .text("x");
-      $li.append($button);
+      $li.append($deleteButton);
 
-      var $likeButton = $("<like-button>")
+      var $incrementButton = $("<increment-button>")
         .addClass("btn btn-success float-right counter")
         .text(example.like);
-      $li.append($likeButton);
+      $li.append($incrementButton);
 
-      var $button = $("<button>")
+      var $liketButton = $("<liket-button>")
         .addClass("btn btn-info float-right like")
         .text("like");
-      $li.append($button);
+      $li.append($liketButton);
 
       return $li;
     });
@@ -122,17 +122,19 @@ var handleLikeBtnClick = function () {
   .parent()
   .attr("data-like");
 
-  API.likeExample(idToLike2);
-  sortLikes(idToLike2);
+  API.getExample(idToLike2);
+  //sortLikes(idToLike2);
+  var likesArray = [];
+  likesArray.push(idToLike2);
+  console.log(likesArray);
   refreshExamples();
 };
 
-
-var sortLikes = function (idToLike2) {
-    var likesArray = [];
-    likesArray.push(idToLike2);
-    console.log(likesArray);
-}
+// var sortLikes = function (idToLike2) {
+//     var likesArray = [];
+//     likesArray.push(idToLike2);
+//     console.log(likesArray);
+// }
 
 // Add event listeners to the submit and delete buttons
 $submitBtn.on("click", handleFormSubmit);

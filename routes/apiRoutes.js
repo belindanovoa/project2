@@ -5,7 +5,9 @@ module.exports = function (app) {
   app.get("/api/examples", function (req, res) {
     db.Example3.findAll({}).then(function (dbExamples) {
       res.json(dbExamples);
+      console.log(res.json(dbExamples));
     });
+    
   });
 
   // Create a new example
