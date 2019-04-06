@@ -3,7 +3,8 @@
     <div class="row">
       <div class="col-8 offset-2">
         <h1>{{msg}}</h1>
-        <h2>What is your favorite color</h2>
+        <h3>Enter a question</h3>
+        <h4>Question of the day</h4>
         <form class="clearfix mb-4" action="POST">
           <div class="form-group">
             <label for="example-text">Name</label>
@@ -17,7 +18,7 @@
           </div>
           <button id="submit" class="btn btn-primary float-right">Submit</button>
         </form>
-        <h3>Examples:</h3>
+        <h3>Comments:</h3>
         <ul id="example-list" class="list-group">
           {{#each users}}
           <li data-id="{{this.id}}" class="list-group-item">

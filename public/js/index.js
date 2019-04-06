@@ -41,7 +41,7 @@ var refreshExamples = function () {
   API.getExamples().then(function (data) {
     var $examples = data.map(function (example) {
       var $a = $("<a>")
-        .text(example.text + " ----  " + example.description)
+        .html(example.text + "<br/>" + example.description)
         .attr("href", "/example/" + example.id);
 
       var $li = $("<li>")
@@ -60,16 +60,16 @@ var refreshExamples = function () {
       $li.append($deleteButton);
 
       var $incrementButton = $("<increment-button>")
-        .addClass("btn btn-success float-right counter")
+        .addClass("btn btn-warning float-right counter")
         .text(example.like);
       $li.append($incrementButton);
 
-      var $liketButton = $("<liket-button>")
+      var $likeButton = $("<like-button>")
         .addClass("btn btn-info float-right like")
-        .text("like");
-      $li.append($liketButton);
+        .html("&#x1F44D;");
+      $li.append($likeButton);
 
-      return $li.sort(function (a, b) { return b - a });
+      return $li;
     });
 
     $exampleList.empty();
