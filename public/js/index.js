@@ -69,11 +69,12 @@ var refreshExamples = function () {
         .text("like");
       $li.append($liketButton);
 
-      return $li;
+      return $li.sort(function (a, b) { return b - a });
     });
 
     $exampleList.empty();
     $exampleList.append($examples);
+    //$exampleList.sort();
   });
 };
 
@@ -118,10 +119,10 @@ var handleLikeBtnClick = function () {
     .attr("data-id");
   API.likeExample(idToLike);
 
-  sortLikes();
+  apiLikes();
 };
 
-var sortLikes = function () {
+var apiLikes = function () {
 
   var idToLike2 = $(this)
     .parent()
