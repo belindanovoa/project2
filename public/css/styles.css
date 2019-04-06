@@ -21,6 +21,9 @@ h1, h2, h3, h4 {
   margin-right: 10%;
   padding: -10px;
 }
+.list-group-item.data-text{
+  color: orange;
+}
 /* .form-group {
 
 } */
