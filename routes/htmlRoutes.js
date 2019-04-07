@@ -8,17 +8,8 @@ module.exports = function (app) {
         Examples: results
       }
       res.render("index", hbObj);
-      //console.log("hboj", hbObj)
     });
   });
-
-
-  //--------------WORKS ON HTML PAGES-------------------------------/
-  // app.get("/", function (req, res) {
-  //   res.sendFile(path.join(__dirname, "/../models/user.js"));
-  // });
-  //--------------WORKS ON HTML PAGES-------------------------------/
-
 
   // Load example page and pass in an example by id
   app.get("/example/:id", function (req, res) {

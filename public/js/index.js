@@ -74,7 +74,6 @@ var refreshExamples = function () {
 
     $exampleList.empty();
     $exampleList.append($examples);
-    //$exampleList.sort();
   });
 };
 
