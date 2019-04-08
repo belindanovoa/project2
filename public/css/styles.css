@@ -53,10 +53,17 @@ body {
 
 .tagline {
   font-size: 60px;
-  font-weight: 600;
   margin-top: 50px;
   line-height: normal;
+  font-family: 'Raleway', sans-serif;
 
+}
+
+.banner p {
+  font-family: 'Muli', sans-serif;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 btn-primary{
@@ -82,7 +89,8 @@ btn-primary{
 }
 
 .services h4 {
-  color: blue;
+  color: #98bf51;
+  font-family: 'Raleway', sans-serif;
 }
 
 .services-img{
