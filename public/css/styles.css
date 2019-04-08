@@ -1,0 +1,29 @@
+.list-group-item {
+  line-height: 2.5;
+}
+body {
+  /* background-color: rgb(104, 183, 233); */
+  margin-top: 40px;
+  background: #00B4DB;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+h1, h2, h3, h4 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: white;
+}
+.list-group-item{
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: -10px;
+}
+.list-group-item.data-text{
+  color: orange;
+}
+/* .form-group {
+
+} */
