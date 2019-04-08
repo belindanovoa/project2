@@ -1,18 +1,19 @@
+/* RAD STYLING START */
 .list-group-item {
   line-height: 2.5;
 }
 body {
   /* background-color: rgb(104, 183, 233); */
   margin-top: 40px;
-  background: #00B4DB;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #fff;  /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(to right, #0083B0, rgb(208, 208, 208));  /* Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to right, #0083B0, #00B4DB); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
 
 }
-h1, h2, h3, h4 {
+.home h1, h2, h3, h4 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  color: white;
+  color: rgb(49, 42, 176);
 }
 .list-group-item{
   border-radius: 20px;
@@ -27,3 +28,93 @@ h1, h2, h3, h4 {
 /* .form-group {
 
 } */
+
+/* RAD STYLING END */
+
+/* CRITIVE LOGO */
+.critivelogo {
+    padding: 5px 0px 0px 220px;
+}
+/* END CRITIVE LOGO */
+
+/* CRITIVE INTRODUCTION SECTION */
+.banner {
+  background-image: linear-gradient(to right, #0083B0, #00B4DB);
+  color: #fff;
+  padding-top: 5%;
+}
+
+.tagline {
+  font-size: 60px;
+  font-weight: 600;
+  margin-top: 50px;
+  line-height: normal;
+
+}
+
+.play-btn {
+  width: 45px;
+  margin: 20px;
+}
+
+.banner a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.bottom-img {
+  width: 100%;
+}
+
+/* services section */
+#services {
+  padding: 80px 0px;
+}
+
+.services-img{
+  width: 150px;
+  margin-top: 20px;
+}
+
+.services {
+  padding: 20px;
+}
+
+.services h4 {
+  padding: 5px;
+  margin-top: 25px;
+  text-transform: uppercase;
+}
+
+/* put a line break with the hero color under and title */
+/* .title::before {
+  content: '';
+  background: #7b1798;
+  height: 5px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transform: translateY(63px);
+}
+
+.title::after {
+  content: '';
+  background: #7b1798;
+  height: 10px;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  display: block;
+  transform: translateY(8px);
+} */
+
+/* make services button round and mirror the gradient */
+#services .btn-primary {
+  box-shadow: none;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, #a517ba,#5f1782);
+}
