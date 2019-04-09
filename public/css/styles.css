@@ -1,4 +1,4 @@
-/* RAD STYLING START */
+/* Q+A styling START */
 .list-group-item {
   line-height: 2.5;
 }
@@ -11,12 +11,20 @@ background: #fff;
   background-color: #4430a5;
 }
 
-
 .home h1, h2, h3, h4 {
   font-family: 'Raleway', sans-serif;
+  font-size: 25px;
   text-align: center;
-  color: #fff;
+  color: #98bf51;
 }
+
+
+.form-group {
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+}
+
 .list-group-item{
   border-radius: 20px;
   margin-top: 20px;
@@ -29,9 +37,8 @@ background: #fff;
 }
 /* .form-group {
 
-} */
 
-/* RAD STYLING END */
+/* Q+A styling END */
 
 /* CRITIVE LOGO */
 .critivelogo {
@@ -151,10 +158,10 @@ background: #fff;
 
 /* details section start */
 .sectiontitle {
-  color: #2f2e2f;
+  color: #4430a5;
   font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  padding-top: 150px;
+  font-size: 30px;
+  padding-top: 180px;
 }
 
 
