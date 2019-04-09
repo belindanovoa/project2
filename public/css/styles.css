@@ -62,7 +62,7 @@ background: #fff;
   padding-bottom: 30px;
 }
 
-btn-primary{
+.banner btn-primary{
   box-shadow: none !important;
   border: none;
   border-radius: 0;
@@ -81,7 +81,7 @@ btn-primary{
 
 /* services section */
 #services {
-  padding: 80px 0px;
+  padding: 10px 0px;
 }
 
 /* .title {
