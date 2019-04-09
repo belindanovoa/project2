@@ -1,19 +1,31 @@
+
+/* Q+A styling START */
 .list-group-item {
   line-height: 2.5;
 }
 body {
-  /* background-color: rgb(104, 183, 233); */
-  margin-top: 40px;
-  background: #00B4DB;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #fff;
+}
 
+#home {
+  padding-top: 50px;
+  background-color: #4430a5;
 }
-h1, h2, h3, h4 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.home h1, h2, h3, h4 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
   text-align: center;
-  color: white;
+  color: #98bf51;
 }
+
+
+.form-group {
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+}
+
 .list-group-item{
   border-radius: 20px;
   margin-top: 20px;
@@ -26,4 +38,199 @@ h1, h2, h3, h4 {
 }
 /* .form-group {
 
+/* Q+A styling END */
+
+/* CRITIVE LOGO */
+.critivelogo {
+    padding: 0px 0px 0px 230px;
+    }
+
+/* END CRITIVE LOGO */
+
+/* CRITIVE INTRODUCTION SECTION */
+.banner {
+  background-image: linear-gradient(to right, rgb(0, 87, 168), rgb(26, 201, 240));
+  color: #fff;
+  padding-top: 5%;
+}
+
+.tagline {
+  font-size: 60px;
+  margin-top: 50px;
+  line-height: normal;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+.banner p {
+  font-family: 'Muli', sans-serif;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.banner btn-primary{
+  box-shadow: none !important;
+  border: none;
+  border-radius: 0;
+  margin-top: 30px;
+  background-color: #4430a5; 
+}
+
+.banner a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.bottom-img {
+  width: 100%;
+}
+
+/* services section */
+#services {
+  padding: 10px 0px;
+}
+
+/* .title {
+  color: #138ca7;
+  font-family: 'Raleway', sans-serif;
+  font-size: 60px;
 } */
+
+.services h4 {
+  color: #98bf51;
+  font-family: 'Raleway', sans-serif;
+}
+
+.services-img{
+  width: 200px;
+  margin-top: 10px;
+}
+
+.services-img:hover {
+  /* transform: translateY(-20px); */
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.services {
+  padding: 20px;
+}
+
+.services h4 {
+  padding: 5px;
+  margin-top: 25px;
+  text-transform: uppercase;
+} 
+
+.title::before {
+  content: '';
+  background: #7b1798;
+  height: 5px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transform: translateY(63px);
+} 
+
+.title::after {
+  content: '';
+  background: #7b1798;
+  height: 10px;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  display: block;
+  transform: translateY(8px);
+} */
+
+/* make services button round and mirror the gradient */
+#services .btn-primary {
+  box-shadow: none;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, rgb(0, 87, 168), rgb(26, 201, 240));
+}
+
+/* details section start */
+.sectiontitle {
+  color: #4430a5;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  padding-top: 180px;
+}
+
+
+.aboutus {
+  padding-top: 50px;
+}
+
+/* footer section */
+
+.footer {
+  background-image: linear-gradient(to right, rgb(0, 87, 168), rgb(26, 201, 240));
+  color: #fff;
+}
+
+.footer img {
+  width: 100%;
+}
+
+.footer-box {
+  padding: 20px;
+}
+
+.footer-box img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.footer-box .fa {
+  margin-right: 8px;
+  font-size: 25px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  padding-top: 7px;
+  border-radius: 2px;
+  background-color: #4430a5; 
+}
+
+.footer-box .form-control {
+  box-shadow: none !important;
+  border: none;
+  border-radius: 0;
+  margin-top: 25px;
+  max-width: 250px;
+}
+
+.footer-box .btn-primary {
+  box-shadow: none !important;
+  border: none;
+  border-radius: 0;
+  margin-top: 30px;
+  background-color: #4430a5; 
+}
+
+.footer-img {
+  width: 100%;
+}
+
+.footer-img-padding {
+  width: 100%;
+  padding-top: 80px;
+}
+hr {
+  background-color: #fff;
+}
+
+.copyright {
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  text-align: center;
+}
+

@@ -1,18 +1,112 @@
+{{!-- CRITIVE INTRODUCTION SECTION START --}}
+<section class="banner">
+<img class="critivelogo" src="images/critivelogo.png">  
+<div class="container">
+    <div class ="row">
+        <div class="col-md-6">
+            <h1 class="tagline">Real questions, credible answers.</h1>
+            <p>A modern Q+A application where questions are asked and 
+              answered. Our community of users votes on the most credible answers
+              to give you the opinions that matter most.</p>
+              <button type="button"class="btn btn-primary">Let's Begin</button>
+        </div>
+        <div class="col-md-6 text-center">
+            <img src="images/bannerimg.png" class="img-fluid">
+        </div>
+    </div>  
+</div>
+{{!-- END CRITIVE INTRODUCTION SECTION --}}
+
+<img src="images/whitewiggle.png" class="bottom-img">
+</section>
+
+{{!-- THREE ICONS SECTION START --}}
+<section id="services">
+    <div class="container text-center">
+        {{!-- <h1 class="title">CHOOSE CRITIVE</h1> --}}
+    <div class="row text-center">
+    <div class="col-md-4 services">
+    <img src="images/icona.png" class="services-img">
+    <h4>Answer Directly</h4>
+    <p>No Wikipedia, no Yahoo Answers, just your thoughts.
+      Real questions with direct answers from a trusted online community.
+    </p>
+    </div> 
+    <div class="col-md-4 services">
+    <img src="images/iconb.png" class="services-img">
+    <h4>Share Opinions</h4>
+    <p>Opions matter most, and yours is the most credible.
+      Agree with an answer to a question, give it a like and boost
+      it to the top.
+    </p>
+    </div> 
+    <div class="col-md-4 services">
+    <img src="images/iconc.png" class="services-img">
+    <h4>Learn More</h4>
+    <p> Stay learning through curiosity. Critive wants
+      to hear your thoughts and opinions on important matter of today.
+    </p>
+    </div> 
+</section>
+{{!-- END THREE ICONS SECTION --}}
+
+{{!-- ABOUT US SECTION 1 START --}}
+<section class="aboutus">
+<div class="container">
+<hr>  
+    <div class="row">
+<div class="col-md-6">
+    <img src="images/happyguy.png" class="img-fluid">
+</div>
+    <div class="col-md-6 about-us">
+    <p class="sectiontitle">Why Critive stands apart</p>
+    <p>Here at Critive, we believe the most credible questions and answers
+    are coming directly from the online community. We let you decide on
+    the questions to ask and answer instead of deciding for you. 
+    </p> 
+</div>
+</div>
+ <hr>
+</div> 
+</section>
+{{!-- ABOUT US SECTION 1 END --}}
+
+{{!-- ABOUT US SECTION 2 START --}}
+<section class="aboutus">
+<div class="container">
+    <div class="row">
+ <div class="col-md-6 about-us">
+    <p class="sectiontitle">Getting Started</p>
+    <p>Direct to our question of the day to get started below. Simply enter your name
+      and response to the question. See where you stand among your community, and
+      get voted to the top.
+    </p> 
+</div>      
+<div class="col-md-6">
+    <img src="images/happygal.png" class="img-fluid">
+</div>
+</div>
+</div>  
+</section>
+{{!-- ABOUT US SECTION 2 END --}}
+  <img src="images/topquizwiggle.png" class="footer-img-padding">
+
+{{!-- Q+A FORM STARTS --}}
 <div id="home">
   <div class="container">
     <div class="row">
       <div class="col-8 offset-2">
         <h1>{{msg}}</h1>
-        <h3>Enter a question</h3>
-        <h4>Question of the day</h4>
+        <h3>Daily Question Below</h3>
+        <h4>"Question of the Day Generates Here"</h4>
         <form class="clearfix mb-4" action="POST">
           <div class="form-group">
-            <label for="example-text">Name</label>
+            <label for="example-text">NAME</label>
             <input type="text" id="example-text" class="form-control" aria-describedby="example-text"
               placeholder="Enter your name">
           </div>
           <div class="form-group">
-            <label for="example-description">Answer</label>
+            <label for="example-description">ANSWER</label>
             <textarea class="form-control" id="example-description" aria-describedby="example-description"
               placeholder="Enter your answer"></textarea>
           </div>
@@ -29,4 +123,42 @@
           </li {{/each}} </ul> </div> </div> </div> </div> <script type="text/javascript"
             src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
             </script>
+
           <script src="/js/index.js"></script>
+{{!-- Q+A FORM ENDS --}}
+
+{{!-- FOOTER START           --}}
+<!-- footer -->
+<section class="footer">
+<img src="images/bottomwiggle.png" class="footer-img"> 
+<div class="container">
+    <div class="row">
+    <div class="col-md-4 footer-box">
+            <img src="images/critivelogo.png">
+            <p>Thank you for supporting Critive. A safe space
+              for the online community and all users. Should
+              you need to report any items please refer to our
+              contact information.
+            </p>
+    </div>
+    <div class="col-md-4 footer-box">
+            <p><b>Contact Us</b></p>
+            <p><i class="fa fa-map-marker-alt"></i>  55 Broad St, NY 10004</p>
+            <p><i class="fa fa-phone-square"></i>  +1 718-355-8976</p>
+            <p><i class="fa fa-envelope"></i></i>  contact@getcritive.org</p>
+    </div>
+
+    <div class="col-md-4 footer-box">
+            <p><b>Join the Critive community</b></p>
+            <input type="email" class="form-control" placeholder="Your Email">
+            <button type="button" class="btn btn-primary">Sign Up</button>
+    </div>
+</div>
+<hr>
+<p class="copyright">  &copy; 2019, created by Team Lazy Loaders</p>
+</div>  
+</section>
+{{!-- FOOTER END --}}
+
+          <script src="/js/index.js"></script>
+
