@@ -3,21 +3,17 @@
   line-height: 2.5;
 }
 body {
-  /* background-color: rgb(104, 183, 233); */
-  margin-top: 40px;
-  background: #fff;  /* fallback for old browsers */
-  /* background: -webkit-linear-gradient(to right, #0083B0, rgb(208, 208, 208));  /* Chrome 10-25, Safari 5.1-6 */
-  /* background: linear-gradient(to right, #0083B0, #00B4DB); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
-
+background: #fff;
 }
 
 #home {
+  padding-top: 50px;
   background-color: #4430a5;
 }
 
 
 .home h1, h2, h3, h4 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-align: center;
   color: #fff;
 }
@@ -88,6 +84,12 @@ btn-primary{
   padding: 80px 0px;
 }
 
+/* .title {
+  color: #138ca7;
+  font-family: 'Raleway', sans-serif;
+  font-size: 60px;
+} */
+
 .services h4 {
   color: #98bf51;
   font-family: 'Raleway', sans-serif;
@@ -113,10 +115,9 @@ btn-primary{
   padding: 5px;
   margin-top: 25px;
   text-transform: uppercase;
-}
+} 
 
-/* put a line break with the hero color under and title */
-/* .title::before {
+.title::before {
   content: '';
   background: #7b1798;
   height: 5px;
@@ -125,7 +126,7 @@ btn-primary{
   margin-right: auto;
   display: block;
   transform: translateY(63px);
-}
+} 
 
 .title::after {
   content: '';
@@ -146,6 +147,19 @@ btn-primary{
   border: none;
   border-radius: 20px;
   background-image: linear-gradient(to right, rgb(0, 87, 168), rgb(26, 201, 240));
+}
+
+/* details section start */
+.sectiontitle {
+  color: #2f2e2f;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  padding-top: 150px;
+}
+
+
+.aboutus {
+  padding-top: 50px;
 }
 
 /* footer section */
@@ -195,6 +209,14 @@ btn-primary{
   background-color: #4430a5; 
 }
 
+.footer-img {
+  width: 100%;
+}
+
+.footer-img-padding {
+  width: 100%;
+  padding-top: 80px;
+}
 hr {
   background-color: #fff;
 }
