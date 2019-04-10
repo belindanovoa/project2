@@ -12,8 +12,8 @@ Critive is a web application that allows users to ask questions and obtain answe
 - https://rocky-atoll-86939.herokuapp.com/ 
 
 # Authors
-Rad Chihaby
-Rachel Hollister
-Belinda Novoa
-JR Luzadas
+Rad Chihaby,
+Rachel Hollister,
+Belinda Novoa,
+JR Luzadas,
 Arjun Dutta
