@@ -1,6 +1,5 @@
 # Critive 
-Critive is a web application that allows users to ask questions and obtain answers from other Critive Users. 
-
+Critive is a web application that allows users to ask questions and obtain answers from other Critive users. Critive users will be able to vote for the best answers to a single question posted by a user. The answers will then be listed in descending order rank them by most popular likes. 
 
 # Prerequisites
 - Git clone git@github.com:belindanovoa/project2.git 
